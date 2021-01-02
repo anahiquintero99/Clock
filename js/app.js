@@ -19,7 +19,7 @@ function getTime() {
   const minute = formatTwoDigits(now.getMinutes());
   const second = formatTwoDigits(now.getSeconds());
 
-  clock.textContent = `${hour}:${minute}:${second}`;
+  clock.textContent = `${hour} : ${minute} : ${second}`;
 }
 
 setInterval(getTime, SECOND)
