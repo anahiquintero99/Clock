@@ -1,3 +1,6 @@
+const hourWrapper = document.querySelector('.hour');
+const minuteWrapper = document.querySelector('.minute');
+const secondWrapper = document.querySelector('.second');
 const clock = document.querySelector('.clock');
 const SECOND = 1000;
 
@@ -19,7 +22,11 @@ function getTime() {
   const minute = formatTwoDigits(now.getMinutes());
   const second = formatTwoDigits(now.getSeconds());
 
-  clock.textContent = `${hour} : ${minute} : ${second}`;
+  //clock.textContent = `${hour} : ${minute} : ${second}`;
+  hourWrapper.textContent = hour;
+  minuteWrapper.textContent = minute;
+  secondWrapper.textContent = second;
+
 }
 
 setInterval(getTime, SECOND)

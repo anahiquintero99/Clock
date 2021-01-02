@@ -26,3 +26,15 @@ h1 {
   font-size: 6rem;
   padding: 2rem;
 }
+
+.hour {
+  color: #FFC0CB;
+}
+
+.minute {
+  color: #FFC0CB;
+}
+
+.second {
+  color:#FFC0CB
+}
